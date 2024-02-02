@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.editor-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.editor {
+	display: block;
+	height: 300px;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	.editor-container {
+		flex-direction: row;
+	}
+	
+	.editor-container > .editor {
+	  height: 100svh;
+	}
+}
