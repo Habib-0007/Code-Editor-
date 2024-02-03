@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=JetBrains+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=JetBrains+Mono");
 
 * {
 	padding: 0;
@@ -6,7 +6,6 @@
 	border: none;
 	outline: none;
 	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -23,21 +22,27 @@ header {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	text-align: center;
+	background: #0076ff;
+	padding-top: 30px;
 }
 
 header button {
-	border: 0.5px solid #000;
+	background: inherit;
+	padding: 12px 10px;
+	font-size: 18px;
 	color: #fff;
-	padding: 12px 8px;
-	font-size: 20px;
-	background: #fff;
-	color: #000;
 	font-weight: bold;
+	border-bottom: 4px solid #0076ff;
+	font-family: "Jost", sans-serif;
+}
+
+header button.active {
+	border-bottom: 4px solid #fff;
 }
 
 section > pre,
 section > .output {
-	background: #000;
+	background: #292d34;
 	color: #fff;
 	display: none;
 	height: 100%;
@@ -54,12 +59,15 @@ section pre {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-all;
-	padding: 10px;
 }
 
 section pre code {
-	font-family: "JetBrains Mono", sans-serif;
+	font-family: "JetBrains Mono", sans-serif !important;
 	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	padding: 10px;
+	caret-color: hotpink;
 }
 
 section > .output {

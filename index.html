@@ -15,7 +15,7 @@
 	<body>
 		<main id="main">
 			<header>
-				<button class="htmlBtn">HTML</button>
+				<button class="htmlBtn active">HTML</button>
 				<button class="cssBtn">CSS</button>
 				<button class="jsBtn">JavaScript</button>
 				<button class="outputBtn">Output</button>
@@ -24,10 +24,12 @@
 				<pre class="html"><code contenteditable="true"></code></pre>
 				<pre class="css"><code contenteditable="true"></code></pre>
 				<pre class="js"><code contenteditable="true"></code></pre>
-				<div class="output">Output</div>
+				<iframe frameborder="0" class="output"></iframe>
 			</section>
 		</main>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/styles/atom-one-dark.min.css">
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 		<script src="./js/index.js"></script>
-		<script id="js-script"></script>
 	</body>
 </html>
