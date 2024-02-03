@@ -22,7 +22,7 @@ header {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	text-align: center;
-	background: #0076ff;
+	background: #5d2b90;
 	padding-top: 30px;
 }
 
@@ -32,7 +32,7 @@ header button {
 	font-size: 18px;
 	color: #fff;
 	font-weight: bold;
-	border-bottom: 4px solid #0076ff;
+	border-bottom: 4px solid #5d2b90;
 	font-family: "Jost", sans-serif;
 }
 
