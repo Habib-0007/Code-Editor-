@@ -3,20 +3,31 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Code Editor</title>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="stylesheet" href="./css/index.css" />
+		<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+		<link
+			href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css"
+			rel="stylesheet"
+		/>
+		<title>Code Editor</title>
 	</head>
-
 	<body>
-		<section class="editor-container">
-			<div
-				id="htmleditor"
-				class="editor"
-			></div>
-			<div id="csseditor" class="editor"></div>
-			<div id="jseditor" class="editor"></div>
-		</section>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+		<main id="main">
+			<header>
+				<button class="htmlBtn">HTML</button>
+				<button class="cssBtn">CSS</button>
+				<button class="jsBtn">JavaScript</button>
+				<button class="outputBtn">Output</button>
+			</header>
+			<section>
+				<pre class="html"><code contenteditable="true"></code></pre>
+				<pre class="css"><code contenteditable="true"></code></pre>
+				<pre class="js"><code contenteditable="true"></code></pre>
+				<div class="output">Output</div>
+			</section>
+		</main>
 		<script src="./js/index.js"></script>
+		<script id="js-script"></script>
 	</body>
 </html>

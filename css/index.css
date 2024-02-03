@@ -1,31 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=JetBrains+Mono");
+
 * {
 	padding: 0;
 	margin: 0;
 	border: none;
 	outline: none;
 	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
 }
 
-.editor-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
+body {
 	width: 100%;
 }
 
-.editor {
+#main {
+	display: grid;
+	grid-template-rows: auto 2fr;
+}
+
+header {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: center;
+}
+
+header button {
+	border: 0.5px solid #000;
+	color: #fff;
+	padding: 12px 8px;
+	font-size: 20px;
+	background: #fff;
+	color: #000;
+	font-weight: bold;
+}
+
+section > pre,
+section > .output {
+	background: #000;
+	color: #fff;
+	display: none;
+	height: 100%;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+section pre:first-child {
 	display: block;
-	height: 300px;
+}
+
+section pre {
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-all;
+	padding: 10px;
+}
+
+section pre code {
+	font-family: "JetBrains Mono", sans-serif;
 	width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-	.editor-container {
-		flex-direction: row;
-	}
-	
-	.editor-container > .editor {
-	  height: 100svh;
-	}
+section > .output {
+	background: #fff;
 }
