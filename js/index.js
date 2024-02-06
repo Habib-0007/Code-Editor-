@@ -29,7 +29,7 @@ header.addEventListener("click", e => {
 		js.style.display = "none";
 		output.style.display = "none";
 	} else if (e.target.classList.contains("jsBtn")) {
-	  document.querySelector(".htmlBtn").classList.remove("active");
+		document.querySelector(".htmlBtn").classList.remove("active");
 		document.querySelector(".cssBtn").classList.remove("active");
 		document.querySelector(".jsBtn").classList.add("active");
 		document.querySelector(".outputBtn").classList.remove("active");
@@ -70,3 +70,4 @@ function runCode() {
 htmlCont.textContent = localStorage.html_code;
 cssCont.textContent = localStorage.css_code;
 jsCont.textContent = localStorage.js_code;
+
