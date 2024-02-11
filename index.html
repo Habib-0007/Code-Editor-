@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
 		<link rel="stylesheet" href="./css/index.css" />
 		<title>Code Editor</title>
 	</head>
@@ -16,9 +20,24 @@
 				<button class="outputBtn">Output</button>
 			</header>
 			<section>
-				<pre class="html"><code contenteditable="true"></code></pre>
-				<pre class="css"><code contenteditable="true"></code></pre>
-				<pre class="js"><code contenteditable="true"></code></pre>
+				<pre class="html"><code contenteditable="true">
+				  </code>
+				  <div class="cleaners">
+				  <i class="far fa-clipboard"></i>
+				  <i class="fa fa-trash"></i>
+				  </div>
+				  </pre>
+				<pre class="css"><code contenteditable="true"></code>
+				<div class="cleaners">
+				  <i class="far fa-clipboard"></i>
+				  <i class="fa fa-trash"></i>
+				  </div></pre>
+				<pre class="js"><code contenteditable="true"></code>
+				<div class="cleaners">
+				  <i class="far fa-clipboard"></i>
+				  <i class="fa fa-trash"></i>
+				  </div>
+				</pre>
 				<iframe frameborder="0" class="output"></iframe>
 			</section>
 		</main>

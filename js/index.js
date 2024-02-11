@@ -7,7 +7,7 @@ var htmlCont = document.querySelector(".html code");
 var cssCont = document.querySelector(".css code");
 var jsCont = document.querySelector(".js code");
 
-document.getElementById("main").style.height = `${window.innerHeight}px`;
+document.body.style.height = `${window.innerHeight}px`;
 
 header.addEventListener("click", e => {
 	if (e.target.classList.contains("htmlBtn")) {
@@ -70,4 +70,3 @@ function runCode() {
 htmlCont.textContent = localStorage.html_code;
 cssCont.textContent = localStorage.css_code;
 jsCont.textContent = localStorage.js_code;
-

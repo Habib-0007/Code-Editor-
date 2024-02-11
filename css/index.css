@@ -15,6 +15,8 @@ body {
 #main {
 	display: grid;
 	grid-template-rows: auto 2fr;
+	height: 100%;
+	position: static;
 }
 
 header {
@@ -46,7 +48,6 @@ section > .output {
 	color: #fff;
 	display: none;
 	height: 100%;
-	overflow-y: scroll;
 	width: 100%;
 }
 
@@ -59,15 +60,40 @@ section pre {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-all;
+	position: relative;
+}
+
+section .output {
+	overflow-y: scroll;
 }
 
 section pre code {
+	overflow-y: scroll;
 	font-family: "JetBrains Mono", sans-serif !important;
 	width: 100%;
 	height: 100%;
 	font-size: 16px;
 	padding: 10px;
 	caret-color: hotpink;
+}
+
+section .cleaners {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	color: #fff;
+	z-index: 99999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	text-align: center;
+	gap: 12px;
+	margin-left: 10px;
+}
+
+section .cleaners i {
+	font-size: 18px;
 }
 
 section > .output {
