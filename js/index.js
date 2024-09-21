@@ -9,6 +9,18 @@ var jsCont = document.querySelector(".js code");
 
 document.body.style.height = `${window.innerHeight}px`;
 
+htmlCont.addEventListener("input", () => {
+	hljs.initHighlightingOnLoad();
+})
+
+cssCont.addEventListener("input", () => {
+	hljs.initHighlightingOnLoad();
+})
+
+jsCont.addEventListener("input", () => {
+	hljs.initHighlightingOnLoad();
+})
+
 header.addEventListener("click", e => {
 	if (e.target.classList.contains("htmlBtn")) {
 		document.querySelector(".htmlBtn").classList.add("active");
